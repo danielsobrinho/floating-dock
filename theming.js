@@ -240,11 +240,13 @@ var ThemeManager = class DashToDock_ThemeManager {
         if (this._dock_position == 0 || this._dock_position == 2) {
             _margin_at_pos_string += "margin-top: " + this._floating_margin + "px; ";
             _margin_at_pos_string += "margin-bottom: " + this._floating_margin + "px; ";
+            _margin_at_pos_string += 'padding-left: 20px; padding-right: 20px; ';
         }
 
         if (this._dock_position == 1 || this._dock_position == 3) {
             _margin_at_pos_string += "margin-right: " + this._floating_margin + "px; ";
             _margin_at_pos_string += "margin-left: " + this._floating_margin + "px; ";
+            _margin_at_pos_string += 'padding-top: 20px; padding-bottom: 20px; ';
         }
         
         let newStyle = '';
